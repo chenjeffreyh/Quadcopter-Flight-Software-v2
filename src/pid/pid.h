@@ -24,7 +24,7 @@ public:
 
   // Core PID functionality
   bool resetPID();  // Gain parameters set to 1 by default
-  bool computePID(int16_t& output, float setPoint, float curPos);
+  bool computePID(int16_t& output, int16_t target, int16_t readPos);
 
 private:
 
