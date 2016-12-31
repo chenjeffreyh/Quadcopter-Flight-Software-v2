@@ -1,5 +1,5 @@
 #ifndef _MPU6050_H_
-  #include "MPU6050\MPU6050.h"
+  #include "MPU6050\MPU6050_6Axis_MotionApps20.h"
   #define _MPU6050_H_
 #endif
 

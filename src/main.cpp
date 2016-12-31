@@ -3,7 +3,7 @@
 #include "globals.h"
 
 #ifndef _MPU6050_H_
-  #include "MPU6050\MPU6050.h"
+  #include "MPU6050\MPU6050_6Axis_MotionApps20.h"
   #define _MPU6050_H_
 #endif
 
@@ -86,6 +86,6 @@ bool initializeMPU()
   imu1.setYGyroOffset(3);
   imu1.setZGyroOffset(25);
   imu1.setZAccelOffset(759);
-  imu1.setFullScaleGyroRange(MPU6050_GYRO_FS_500);
+  imu1.setFullScaleGyroRange(MPU6050_GYRO_FS_2000);
   return true;
 }
