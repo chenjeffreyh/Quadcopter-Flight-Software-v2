@@ -43,9 +43,9 @@ bool PID::resetPID()
   return true;
 }
 
-bool PID::computePID(int16_t& output, int16_t target, int16_t readPos)
+bool PID::computePID(double& output, double target, double readPos)
 {
-  int16_t curError = readPos - target;
+  double curError = readPos - target;
   accumulatedError += curError;
   errorRate = curError - prevError;
 

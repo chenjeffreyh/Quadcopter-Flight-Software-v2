@@ -24,14 +24,14 @@ public:
 
   // Core PID functionality
   bool resetPID();  // Gain parameters set to 1 by default
-  bool computePID(int16_t& output, int16_t target, int16_t readPos);
+  bool computePID(double& output, double target, double readPos);
 
 private:
 
   double Kp;
   double Ki;
   double Kd;
-  float prevError;
-  float accumulatedError;
-  float errorRate;
+  double prevError;
+  double accumulatedError;
+  double errorRate;
 };
